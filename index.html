@@ -59,6 +59,12 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--rule)
 dl { margin: 0; display: grid; gap: 18px; }
 dt { font-weight: 700; }
 dd { margin: 4px 0 0; max-width: 65ch; }
+.stores { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.store { display: inline-flex; flex-direction: column; justify-content: center; min-height: 52px; padding: 8px 16px; border: 3px solid var(--fg); border-radius: 8px; background: var(--fg); color: var(--bg); text-decoration: none; line-height: 1.2; box-shadow: 0 3px 0 var(--accent); }
+.store small { font-size: 12px; opacity: .85; }
+.store b { font-size: 17px; }
+.store:hover { transform: translateY(-1px); }
+.note { color: var(--muted); font-size: 14px; }
 </style>
 
 </head>
@@ -72,6 +78,11 @@ dd { margin: 4px 0 0; max-width: 65ch; }
   <section>
     <h2>Citrus Empire: Lemonade Stand</h2>
     <p>Build a lemonade empire, one cup at a time.</p>
+    <div class="stores">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.citrusempire.game"><small>Get it on</small><b>Google Play</b></a>
+      <a class="store" href="https://apps.apple.com/app/id6817052960"><small>Download on the</small><b>App Store</b></a>
+    </div>
+    <p class="note">Launching soon on both stores.</p>
     <ul>
       <li><a href="support/">Support</a></li>
       <li><a href="privacy/">Privacy Policy</a></li>
